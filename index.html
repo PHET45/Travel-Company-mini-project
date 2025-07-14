@@ -312,41 +312,40 @@
         <!-- ape -->
          <section>
             <div class="w-full flex flex-col items-center justify-center p-8 bg-white"> 
-                <h1 class="font-poppins font-bold text-[48px] leading-[68px] text-center mb-8">
+                <h1 class="font-poppins font-bold text-2xl sm:text-5xl leading-[38px] sm:leading-[68px] text-center mb-6 sm:mb-8">
                     World Top Visiting <br/>Place in 2021
                 </h1>
             </div>
-            <div class="relative w-full flex flex-col justify-center items-center"> 
+            <div class="relative w-full flex flex-col items-center justify-center">
                 <!-- Map Image -->
-                <img src="picture/Map.png" alt="World Map" class="flex flex-col justify-center items-center w-[1500px] h-[742px]" />
+                <img src="picture/Map.png" alt="World Map" class="w-full max-w-[95vw] pb-10 md:max-w-[1500px] h-auto" />
                 <!-- Overlayed Flags and Info -->
-              <div class="absolute left-[22%] top-[48%] flex flex-col items-center">
-                <div class="rounded-full w-32 h-16 flex items-center justify-center">
-                  <img src="picture/mexico-flag.png" alt="Mexico Flag" class="w-[120px] h-[204px] object-cover" />
+                <div class="absolute left-[13%] top-[36%] sm:left-[22%] sm:top-[48%] md:left-[22%] md:top-[43%] flex flex-col items-center">
+                  <div class="rounded-full w-10 h-8 md:w-32 md:h-16 flex items-center justify-center">
+                    <img src="picture/mexico-flag.png" alt="Mexico Flag" class="w-16 h-16 md:w-[120px] md:h-[204px] object-cover" />
+                  </div>
+                  <div class="hidden sm:block text-center mt-1 sm:mt-2">
+                    <div class="font-poppins font-bold text-xs md:text-lg">Mexico</div>
+                    <div class="font-poppins text-[10px] sm:text-xs text-gray-400">03 Tour</div>
+                  </div>
                 </div>
-                <div class="text-center mt-2">
-                  <div class="font-bold text-lg">Mexico</div>
-                  <div class="text-xs text-gray-400">03 Tour</div>
+                <div class="absolute left-[42%] top-[25%] md:left-[47%] md:top-[31%] flex flex-col items-center">
+                  <div class="rounded-full w-10 h-8 md:w-32 md:h-16 flex items-center justify-center">
+                    <img src="picture/france-flag.png" alt="France Flag" class="w-16 h-16 md:w-[120px] md:h-[204px] object-cover" />
+                  </div>
+                  <div class="hidden sm:block text-center mt-1 sm:mt-2">
+                    <div class="font-poppins font-bold text-xs md:text-lg">France</div>
+                    <div class="font-poppins text-[10px] sm:text-xs text-gray-400">03 Tour</div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="absolute left-[48%] top-[31%] flex flex-col items-center">
-                <div class="rounded-full w-32 h-16 flex items-center justify-center">
-                  <img src="picture/france-flag.png" alt="France Flag" class="w-[120px] h-[204px] object-cover" />
-                </div>
-                <div class="text-center mt-2">
-                  <div class="font-bold text-lg">France</div>
-                  <div class="text-xs text-gray-400">03 Tour</div>
-                </div>
-              </div>
-
-              <div class="absolute left-[74%] top-[70%] flex flex-col items-center">
-                <div class="rounded-full w-32 h-16 flex items-center justify-center">
-                  <img src="picture/australia-flag.png" alt="Australia Flag" class="w-[120px] h-[204px] object-cover" />
-                </div>
-                <div class="text-center mt-2">
-                  <div class="font-bold text-lg">Australia</div>
-                  <div class="text-xs text-gray-400">02 Tour</div>
+                <div class="absolute left-[78%] top-[50%] md:left-[74%] md:top-[68%] flex flex-col items-center">
+                  <div class="rounded-full w-10 h-8 md:w-32 md:h-16 flex items-center justify-center">
+                    <img src="picture/australia-flag.png" alt="Australia Flag" class="w-16 h-16 md:w-[120px] md:h-[204px] object-cover" />
+                  </div>
+                  <div class="hidden sm:block text-center mt-1 sm:mt-2">
+                    <div class="font-poppins font-bold text-xs md:text-lg">Australia</div>
+                    <div class="font-poppins text-[10px] sm:text-xs text-gray-400">02 Tour</div>
+                  </div>
                 </div>
             </div>
         </section>
@@ -359,7 +358,7 @@
             <div class="relative flex flex-col items-start justify-center px-62 pt-60 pb-10 z-10">
               
               <!-- Headline -->
-              <h2 class="font-bold text-[48px] text-black mb-8 leading-[68px]">
+              <h2 class="font-poppins font-bold text-[48px] text-black mb-8 leading-[68px]">
                 Subscribe<br>for every Tour<br>News & Tips
               </h2>
         
@@ -369,12 +368,11 @@
                   <input 
                     type="email" 
                     placeholder="Enter Your Email" 
-                    class="flex items-center justify-start pl-4 pr-40 py-8 text-[16px] bg-white"
+                    class="flex items-center justify-start pl-4 pr-40 py-8 font-dm-sans text-[16px] bg-white"
                   />
                   <button 
                     type="submit" 
-                    class="bg-[#FF6B2C] hover:bg-orange-600 w-[177px] h-[70px] text-white px-8 py-3 rounded-2xl flex items-center"
-                  >
+                    class="bg-[#FF6B2C] hover:bg-orange-600 w-[177px] h-[70px] font-dm-sans text-white px-8 py-3 rounded-2xl flex items-center">
                     Subscribe <span class="ml-2 pb-2 text-4xl">→</span>
                   </button>
                 </form>
@@ -386,12 +384,12 @@
                 <!-- Branding & Copyright -->
                 <div class="flex flex-col items-start">
                   <div class="flex items-center">
-                    <span class="font-bold text-[32px] text-black">Tripp</span>
+                    <span class="font-baloo-bhai-2 font-bold text-[32px] text-black">Tripp</span>
                     <span class="text-orange-600 text-6xl mb-4">.</span>
                   </div>
                   <div class="flex items-center">
-                    <span class="text-[14px] text-gray-700 mt-4">Copyright©Tripp. </span>
-                    <span class="text-[14px] text-gray-700 mt-4">All right reserved</span>
+                    <span class="font-dm-sans text-[14px] text-gray-700 mt-4">Copyright©Tripp. </span>
+                    <span class="font-dm-sans text-[14px] text-gray-700 mt-4">All right reserved</span>
                   </div>
                 </div>
         
@@ -418,7 +416,6 @@
                     </svg>
                   </a>
                 </div>
-        
               </div>
             </div>
           </div>
