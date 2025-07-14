@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Paytone+One&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         .font-baloo-bhai-2 {
             font-family: 'Baloo Bhai 2', sans-serif;
@@ -16,6 +16,9 @@
         }
         .font-paytone-one {
             font-family: 'Paytone One', sans-serif;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
         }
     </style>
     <title>Document</title>
@@ -225,15 +228,15 @@
           </div>
     </section>
       <!-- Chompoo -->
-      <section class="mt-32 w-full bg-[#FEF9F3] py-20 overflow-x-hidden">
+      <section class="mt-32 w-full bg-[#FEF9F3] py-30 overflow-x-hidden">
         <div class="flex flex-row items-center">
           
           <!-- Left Side : Picture Card -->
-          <div class="flex flex-col -translate-x-24">
+          <div class="font-poppins flex flex-col -translate-x-16">
             <div class="flex gap-6 pl-4">
               <!-- Card 1 -->
-              <div class="translate-y-6 w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-4 text-white font-semibold">
-                <div class="text-[20px]">Great Wall of China</div>
+              <div class="cursor-pointer translate-y-6 w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold transition-transform duration-500 hover:scale-105">
+                <div class="text-[20px]">Wall of China</div>
                 <div class="flex justify-between text-[18px] text-white/70">
                   <span>China</span>
                   <span>4.8 ★</span>
@@ -241,7 +244,7 @@
               </div>
       
               <!-- Card 2 -->
-              <div class="w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-4 text-white font-semibold">
+              <div class="cursor-pointer w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold transition-transform duration-500 hover:scale-105">
                 <div class="text-[20px]">Lake Powell</div>
                 <div class="flex justify-between text-[18px] text-white/70">
                   <span>U.S.A</span>
@@ -250,7 +253,7 @@
               </div>
       
               <!-- Card 3 -->
-              <div class="translate-y-6 w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-4 text-white font-semibold">
+              <div class="cursor-pointer translate-y-6 w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold transition-transform duration-500 hover:scale-105">
                 <div class="text-[20px]">Deep Creek Lake</div>
                 <div class="flex justify-between text-[18px] text-white/70">
                   <span>Maryland</span>
@@ -260,26 +263,28 @@
             </div>
       
             <!-- Arrow -->
-            <div class="flex justify-center gap-4 mt-6">
-              <img src="/picture/Arrow.png" alt="Arrow" class="w-20 cursor-pointer" />
-            </div>
+            <div class="flex justify-center gap-6 mt-8">
+              <img src="/picture/arrow-right-orange.png" alt="Left Arrow" class=" opacity-40 hover:opacity-100 hover:scale-150 transition duration-300 w-6 rotate-180 cursor-pointer" />
+              <img src="/picture/arrow-right-orange.png" alt="Right Arrow" class="opacity-40 hover:opacity-100 hover:scale-150 transition duration-300 w-6 cursor-pointer" />
           </div>
+        </div>
       
           <!-- Right Side : Text -->
           <div class="flex-1 flex items-center">
-            <div class="max-w-xl px-8 ml-12">
-              <h2 class="text-[48px] font-bold text-[#2f201c] leading-tight">
+            <div class="max-w-2xl px-8 ml-12">
+              <h2 class="font-poppins text-[48px] font-bold text-[#2f201c] leading-tight">
                 Most Popular <br />
                 Destination of Us!
               </h2>
-              <p class="text-gray-500 mt-6 leading-relaxed text-[18px]">
+              <p class="text-gray-500 mt-6 leading-relaxed text-[18px] font-dm-sans">
                 Credibly unleash economically sound e-business with bleeding-edge users. 
                 Uniquely simplify mission-critical benefits with cross-unit manufactured products. 
                 Energistically re-engineer
               </p>
-              <button class="mt-6 bg-[#fc5f45] text-white px-12 py-6 rounded-2xl text-sm font-semibold hover:bg-[#e74e37] transition text-[16px]">
-                View All →
-              </button>
+              <div class="mt-6 font-dm-sans">
+                <a class="w-[180px] h-[70px] bg-[#FE5B3E] rounded-[15px] text-white flex items-center justify-center gap-2" href="#">View All <img src="picture/arrow-right-white.png" alt="">
+                </a>
+                </div>
             </div>
           </div>
       
