@@ -350,51 +350,38 @@
             </div>
         </section>
         <footer>
-          <div class="relative bg-[url('picture/bg-footer.png')] bg-cover bg-center filter brightness-100 flex flex-col justify-between w-full h-[818px]">
-            <!-- Gradient Overlay -->
+          <div class="relative bg-[url('picture/bg-footer.png')] bg-cover bg-center filter brightness-100 flex flex-col justify-between w-full min-h-[500px] md:h-[818px]">
             <div class="absolute inset-0 bg-white/80"></div>
-        
-            <!-- Main Footer Content -->
-            <div class="relative flex flex-col items-start justify-center px-62 pt-60 pb-10 z-10">
-              
-              <!-- Headline -->
-              <h2 class="font-poppins font-bold text-[48px] text-black mb-8 leading-[68px]">
+            <div class="relative flex flex-col items-start md:items-start justify-center px-4 md:px-62 pt-16 md:pt-60 pb-10 z-10 w-full">
+              <h2 class="font-poppins font-bold text-4xl items-start justify-start text-left mb-18 sm:text-3xl md:text-[48px] text-black md:mb-8 leading-tight md:leading-[68px] md:text-left">
                 Subscribe<br>for every Tour<br>News & Tips
               </h2>
-        
-              <!-- Email Subscription Box -->
-              <div class="flex items-center bg-white rounded-3xl shadow-xl p-2 max-w-[574px] h-[100px] w-full">
-                <form class="flex items-center justify-between w-full max-w-xl">
+              <div class="flex flex-col sm:flex-row items-center bg-white rounded-3xl shadow-xl p-2 max-w-full sm:max-w-[574px] h-auto sm:h-[100px] w-full mb-8">
+                <form class="flex flex-row sm:flex-row items-center justify-between w-full">
                   <input 
                     type="email" 
-                    placeholder="Enter Your Email" 
-                    class="flex items-center justify-start pl-4 pr-40 py-8 font-dm-sans text-[16px] bg-white"
+                    placeholder="Your Email" 
+                    class="w-full sm:w-auto flex items-center justify-start pl-2 pr-4 py-7 sm:pr-40 py-4 sm:py-8 font-dm-sans text-[16px] bg-white rounded-2xl sm:rounded-none mb-2 sm:mb-0"
                   />
                   <button 
                     type="submit" 
-                    class="bg-[#FF6B2C] hover:bg-orange-600 w-[177px] h-[70px] font-dm-sans text-white px-8 py-3 rounded-2xl flex items-center">
-                    Subscribe <span class="ml-2 pb-2 text-4xl">→</span>
+                    class="w-full py-8 my-0 sm:w-[177px] h-[50px] sm:h-[70px] font-dm-sans text-white px-8 py-3 rounded-2xl flex items-center justify-center bg-[#FF6B2C] hover:bg-orange-600 transition">
+                    Subscribe <span class="ml-2 pb-1 text-2xl sm:text-4xl">→</span>
                   </button>
                 </form>
               </div>
-        
-              <!-- Footer Bottom Row -->
-              <div class="relative flex flex-row items-center justify-between w-full pb-6 z-10 mt-20 max-w-[690px]">
-                
-                <!-- Branding & Copyright -->
-                <div class="flex flex-col items-start">
-                  <div class="flex items-center">
-                    <span class="font-baloo-bhai-2 font-bold text-[32px] text-black">Tripp</span>
-                    <span class="text-orange-600 text-6xl mb-4">.</span>
+              <div class="relative flex flex-col items-start sm:flex-row items-center justify-between w-full pb-6 z-10 mt-10 sm:mt-20 max-w-full sm:max-w-[690px] gap-6 sm:gap-0">
+                <div class="flex flex-col items-start sm:items-start">
+                  <div class="flex items-center justify-center">
+                    <span class="font-baloo-bhai-2 font-bold text-4xl sm:text-[32px] text-black">Tripp</span>
+                    <span class="text-orange-600 text-3xl sm:text-6xl mb-2 sm:mb-4">.</span>
                   </div>
-                  <div class="flex items-center">
-                    <span class="font-dm-sans text-[14px] text-gray-700 mt-4">Copyright©Tripp. </span>
-                    <span class="font-dm-sans text-[14px] text-gray-700 mt-4">All right reserved</span>
+                  <div class="flex flex-col sm:flex-row items-center">
+                    <span class="font-dm-sans text-[18px] font-bold sm:text-[14px] text-gray-700 mt-2 sm:mt-4">Copyright©Tripp.</span>
+                    <span class="font-dm-sans text-[18px] font-bold sm:text-[14px] text-gray-700 mt-2 sm:mt-4 sm:ml-2">All right reserved</span>
                   </div>
                 </div>
-        
-                <!-- Social Icons -->
-                <div class="flex gap-4 pt-12 text-gray-700 text-lg">
+                <div class="flex gap-4 pt-4 sm:pt-20 text-gray-700 text-lg justify-center">
                   <a href="#" aria-label="Google">
                     <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
                       <path d="M21.805 10.023h-9.765v3.955h5.617c-.242 1.242-1.484 3.648-5.617 3.648-3.375 0-6.125-2.789-6.125-6.242s2.75-6.242 6.125-6.242c1.922 0 3.211.82 3.953 1.523l2.703-2.633c-1.703-1.57-3.898-2.523-6.656-2.523-5.523 0-10 4.477-10 10s4.477 10 10 10c5.781 0 9.594-4.055 9.594-9.773 0-.656-.07-1.156-.156-1.613z"/>
