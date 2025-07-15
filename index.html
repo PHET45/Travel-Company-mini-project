@@ -257,11 +257,21 @@
       <section class="mt-32 w-full bg-[#FEF9F3] py-30 overflow-x-hidden">
         <div class="flex flex-col md:flex-row items-center">
       
-          <!-- Left Side : Picture Card -->
-          <div class="font-poppins flex flex-col md:-translate-x-30">
+          <!-- ✅ Mobile Layout -->
+          <div class="md:hidden flex flex-col items-center w-full px-6 text-center font-poppins">
+            <!-- Text -->
+            <h2 class="text-[32px] font-bold text-[#2f201c] leading-tight">
+              Most Popular <br />
+              Destination of Us!
+            </h2>
+            <p class="text-gray-500 mt-4 leading-relaxed text-[16px] font-dm-sans">
+              Credibly unleash economically sound e-business with bleeding-edge users. 
+              Uniquely simplify mission-critical benefits with cross-unit manufactured products. 
+              Energistically re-engineer
+            </p>
       
-            <!-- Mobile: Single Card Centered -->
-            <div class="flex md:hidden flex-col items-center">
+            <!-- Card -->
+            <div class="w-full mt-10 flex flex-col items-center">
               <div class="w-[90%] aspect-[166/225] bg-[url('/picture/grey-card-for-pic.png')] bg-center bg-cover rounded-2xl flex flex-col justify-end p-6 text-white font-semibold">
                 <div class="text-[20px]">Great Wall of China</div>
                 <div class="flex justify-between text-[18px] text-white/70">
@@ -276,12 +286,23 @@
                 <span class="w-4 h-4 rounded-full bg-gray-200"></span>
                 <span class="w-4 h-4 rounded-full bg-gray-200"></span>
               </div>
-            </div>
       
-            <!-- Desktop Cards -->
-            <div class="hidden md:flex gap-8 pl-4">
+              <!-- View All Button -->
+              <div class="mt-6 font-dm-sans">
+                <a class="w-[180px] h-[70px] bg-[#FE5B3E] rounded-[15px] text-white flex items-center justify-center gap-2" href="#">
+                  View All <img src="picture/arrow-right-white.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- ✅ Desktop Layout -->
+          <div class="hidden md:flex md:flex-row w-full items-start font-poppins">
+            
+            <!-- Left: Cards -->
+            <div class="flex gap-8 pl-4 md:w-[60%]">
               <!-- Card 1 -->
-              <div class="cursor-pointer translate-y-6 w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold transition-transform duration-500 hover:scale-105">
+              <div class="cursor-pointer translate-y-6 w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold hover:scale-105 transition">
                 <div class="text-[20px]">Great Wall of China</div>
                 <div class="flex justify-between text-[18px] text-white/70">
                   <span>Beijing, China</span>
@@ -290,7 +311,7 @@
               </div>
       
               <!-- Card 2 -->
-              <div class="cursor-pointer w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold transition-transform duration-500 hover:scale-105">
+              <div class="cursor-pointer w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold hover:scale-105 transition">
                 <div class="text-[20px]">Lake Powell</div>
                 <div class="flex justify-between text-[18px] text-white/70">
                   <span>U.S.A</span>
@@ -299,7 +320,7 @@
               </div>
       
               <!-- Card 3 -->
-              <div class="cursor-pointer translate-y-6 w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold transition-transform duration-500 hover:scale-105">
+              <div class="cursor-pointer translate-y-6 w-80 aspect-[166/225] flex-shrink-0 bg-[url('/picture/grey-card-for-pic.png')] bg-center rounded-2xl flex flex-col justify-end p-6 text-white font-semibold hover:scale-105 transition">
                 <div class="text-[20px]">Deep Creek Lake</div>
                 <div class="flex justify-between text-[18px] text-white/70">
                   <span>Maryland</span>
@@ -308,35 +329,28 @@
               </div>
             </div>
       
-            <!-- Arrow -->
-            <div class="hidden md:flex justify-center gap-6 mt-8">
-              <img src="/picture/arrow-right-orange.png" alt="Left Arrow" class="opacity-40 hover:opacity-100 hover:scale-150 transition duration-300 w-6 rotate-180 cursor-pointer" />
-              <img src="/picture/arrow-right-orange.png" alt="Right Arrow" class="opacity-40 hover:opacity-100 hover:scale-150 transition duration-300 w-6 cursor-pointer" />
-            </div>
-          </div>
-      
-          <!-- Right Side : Text -->
-          <div class="flex-1 flex items-center mt-12 md:mt-0">
-            <div class="max-w-2xl px-8 md:ml-12 text-center md:text-left">
-              <h2 class="font-poppins text-[32px] md:text-[48px] font-bold text-[#2f201c] leading-tight">
+            <!-- Right: Text + Button -->
+            <div class="w-[40%] px-8 ml-12 text-left">
+              <h2 class="text-[48px] font-bold text-[#2f201c] leading-tight">
                 Most Popular <br />
                 Destination of Us!
               </h2>
-              <p class="text-gray-500 mt-4 md:mt-6 leading-relaxed text-[16px] md:text-[18px] font-dm-sans">
+              <p class="text-gray-500 mt-6 leading-relaxed text-[18px] font-dm-sans">
                 Credibly unleash economically sound e-business with bleeding-edge users. 
                 Uniquely simplify mission-critical benefits with cross-unit manufactured products. 
                 Energistically re-engineer
               </p>
-            
-              <div class="mt-6 font-dm-sans flex justify-center md:justify-start">
+              <div class="mt-6 font-dm-sans">
                 <a class="w-[180px] h-[70px] bg-[#FE5B3E] rounded-[15px] text-white flex items-center justify-center gap-2" href="#">
                   View All <img src="picture/arrow-right-white.png" alt="">
                 </a>
               </div>
             </div>
+      
           </div>
-
+        </div>
       </section>
+      
       
        <!-- Phet -->
        <section class="flex justify-center items-center w-full min-h-screen relative rotate-0 opacity-100 px-[5vw] py-10">
